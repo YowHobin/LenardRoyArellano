@@ -1,0 +1,269 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: wix madefor text, Roboto;
+}
+
+body{
+  height: 100vh;
+  /* background-color: rgb(207, 207, 207); */
+  background-color: #f9f9f9;
+}
+
+
+/* name */
+.header{
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  margin: auto 0;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.header h1{
+  font-size: 2.9rem;
+  font-weight: 800;
+  color: rgb(46, 47, 45);
+}
+
+.header span{
+  font-size: 1.7rem;
+  color: rgb(73, 97, 89);
+}
+
+.header p{
+  font-size: 1.2rem;
+}
+
+/* typewriter */
+
+.header .text{
+  position: relative;
+  /* color: rgb(99, 139, 149); */
+  color:rgb(114, 128, 93);
+  font-weight: 700;
+  max-width: 340px;
+  overflow: hidden;
+
+}
+
+.text.sec-text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-left: 2px solid rgb(114, 128, 93);;
+  /* border-left: 2px solid rgb(99, 139, 149); */
+  animation: typewriter 6s steps(16) infinite;
+}
+
+@keyframes typewriter{
+  40%, 60%{
+    left: calc(100% + 4px);
+  }
+  100%{
+    left: 0%;
+  }
+}
+
+/* Intro */
+.header .description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  color: rgb(73, 97, 89);
+  font-weight: 600;
+  font-size: 1rem;
+  
+}
+
+/* blob */
+.container{
+  margin: 12rem auto 20rem;
+  width: 100%;
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-around;
+  padding: 0 2rem 0 2rem;
+}
+
+
+
+.animation{
+  width: 25rem;
+  height: 25rem;
+  background-color: rgb(188, 212, 146);
+  animation: animate 6s ease-in-out infinite;
+  transition: animate 6s ease-in-out;
+  display: flex;
+  overflow: hidden;
+  object-fit: contain;
+  margin: 8px;
+  z-index: 100;
+}
+
+.blob{
+  overflow: hidden;
+  border: 2px solid;
+  animation: animate 6s ease-in-out infinite;
+  transition: animate 6s ease-in-out;
+  box-shadow: 0px 1px 63px 6px #B5ACAC;
+}
+
+.img{
+  max-width: 23rem;
+  object-fit: fill;
+}
+
+
+
+@keyframes animate{
+  0%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100%{
+     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+/* @keyframes outline{
+  0%{
+    border-radius: 70% 50% 40% 80%/70% 40% 80% 50%;
+  }
+  50%{
+    border-radius: 40% 70% 80% 50%/60% 70% 40% 70%;
+  }
+  100%{
+    border-radius:  60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+} */
+
+/* responsive */
+
+@media (max-width:992px){
+  .animation{
+  width: 15rem;
+  height: 15rem;
+  background-color: rgb(188, 212, 146);
+  animation: animate 5s ease-in-out infinite;
+  transition: animate 5s ease-in-out;
+  display: flex;
+  overflow: hidden;
+  object-fit: cover;
+  margin: 8px;
+  z-index: 100;
+  }
+
+  .blob{
+  overflow: hidden;
+  border-style: solid;
+  animation: animate 5s ease-in-out infinite;
+  transition: animate 5s ease-in-out;
+  box-shadow: 0px 1px 30px 6px #B5ACAC;
+}
+
+}
+@media (max-width: 582px){
+  .blob-container, .blob, .animation{
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    text-align: center; 
+  }
+  .header h1{
+    font-size: 2rem;
+  }
+
+  .header span{
+    font-size: 1.5rem;
+    text-align: center; 
+  }
+
+
+  .header .description{
+    font-size: 1rem;
+    display: flex;
+    text-align: center; 
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    margin-top: 21rem;
+    
+  }
+}
+
+/* About me */
+
+.about-me{
+  max-width: 1200px;
+  margin: 15rem auto 0;
+  height: 97vh;
+  position: relative;
+}
+
+.about-header{
+  text-align: center;
+  margin: 13rem auto 8rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgb(46, 47, 45);
+  
+}
+
+.about-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.about-blob-container .blob{
+  margin: 0 2rem;
+}
+
+
+
+.about-description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: justify;
+  color: rgb(73, 97, 89);
+  margin: 0 2rem;
+}
+
+/* about me responsive */
+  @media (max-width: 582px){
+    
+  }
+
+  @media (max-width:992px){
+  
+
+
+  }
+
+
+
+
+
