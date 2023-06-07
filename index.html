@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Portfolio</title>
+
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <script src="JavaScript/header.js"></script>
+    <link rel="stylesheet" href="styles/timeline.css" />
+
+    <link rel="icon" href="images/circle.png" />
+
+    <!-- loader -->
+    <link rel="stylesheet" href="styles/loader.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+      integrity="sha512-k2WPPrSgRFI6cTaHHhJdc8kAXaRM4JBFEDo1pPGGlYiOyv4vnA0Pp0G5XMYYxgAPmtmv/IIaQA6n5fLAyJaFMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- font awesome icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://kit.fontawesome.com/d521604b4c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- fonts -->
+    <!-- wix madefor text font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&family=Wix+Madefor+Text:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&family=Wix+Madefor+Text:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- scroll animation -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script>
+      ScrollReveal({ duration: 1000 });
+    </script>
+
+    <!-- animation js -->
+    <script defer src="JavaScript/animation.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar" id="">
+        <div class="logo">
+          <a href="#"> <img src="images/Website-logo.png" alt="Logo" /></a>
+        </div>
+        <ul class="links">
+          <li><a href="#" class="nav-links">Home</a></li>
+          <li><a href="#About" class="nav-links">About Me</a></li>
+          <li><a href="#" class="nav-links">Projects</a></li>
+
+          <div class="socials">
+            <a href="">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </ul>
+        <a
+          href="#"
+          class="action_btn"
+          data-toggle="tooltip"
+          title="Interested? Click Me!"
+          >Contact Me!
+          <i class="fa-solid fa-paper-plane" style="margin-left: 5px"></i
+        ></a>
+
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown-menu">
+        <li><a href="#" class="nav-links">Home</a></li>
+        <li><a href="#About" class="nav-links">About Me</a></li>
+        <li><a href="#" class="nav-links">Projects</a></li>
+
+        <li>
+          <a href="" id="b-top" class="nav-links"
+            ><i class="fa-brands fa-facebook"></i>FaceBook</a
+          >
+        </li>
+        <li>
+          <a href="" class="nav-links"
+            ><i class="fa-brands fa-github"></i>GitHub
+          </a>
+        </li>
+
+        <a href="#" class="action_btn"
+          >Contact Me!
+          <i
+            class="fa-solid fa-paper-plane"
+            style="margin-left: 5px; font-size: 0.9rem"
+          ></i
+        ></a>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- loader -->
+      <div class="overlay"></div>
+
+      <div class="loader">
+        <div class="box-load1"></div>
+        <div class="box-load2"></div>
+        <div class="box-load3"></div>
+      </div>
+
+      <section>
+        <div class="container">
+          <div class="header">
+            <h1 class="h1-header">Lenard Roy Arellano.</h1>
+            <span class="text first-text"></span>
+            <span class="text sec-text typewriter"></span>
+            <span class="description"
+              >A Front-End Web Developer with a passion for creating
+              user-friendly and engaging web applications.</span
+            >
+          </div>
+
+          <div class="blob-container">
+            <div class="blob">
+              <div class="animation">
+                <img src="images/image-sample.png" alt="Image" class="img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="about-me" id="About">
+          <div class="about-header">
+            <h1>About Me</h1>
+          </div>
+
+          <div class="about-container">
+            <div class="about-description">
+              <span>
+                I am a front-end web developer with a passion for creating
+                user-friendly and engaging web applications. I am proficient in
+                a variety of programming languages, including HTML, CSS, and
+                JavaScript. I am also experienced in using a variety of
+                development tools and frameworks.
+                <br /><br />
+
+                I am always looking for new challenges and opportunities to
+                learn and grow. I am a team player and I am always willing to
+                help others. I am also a quick learner always eager to take on
+                new tasks.
+                <br /><br /><br />
+
+                <div class="download-container">
+                  <a href="#" class="download_btn"
+                    >Download CV
+                    <i
+                      class="fa-sharp fa-solid fa-circle-arrow-down"
+                      style="margin-left: 3px"
+                    ></i
+                  ></a>
+                </div>
+              </span>
+            </div>
+            <div class="about-blob-container">
+              <div class="blob">
+                <img src="images/sample-about.jpg" alt="Image" class="img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="skills">
+          <div class="skills-header">
+            <h1>Skills</h1>
+          </div>
+
+          <div class="skills-container">
+            <div class="skills-description">
+              <span>
+                I am a front-end web developer with a passion for creating
+                user-friendly and engaging web applications. I am proficient in
+                a variety of programming languages, including HTML, CSS, and
+                JavaScript. I am also experienced in using a variety of
+                development tools and frameworks.
+                <br /><br />
+
+                I am always looking for new challenges and opportunities to
+                learn and grow. I am a team player and I am always willing to
+                help others. I am also a quick learner always eager to take on
+                new tasks.
+              </span>
+            </div>
+            <div class="skills-set-container">
+              <div class="skills-set">
+                <img src="images/sample-about.jpg" alt="Image" class="img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="education">
+          <div class="education-header">
+            <h1>Education</h1>
+          </div>
+
+          <div class="education-container">
+            <div class="educ-description">
+              <span>
+                I am a front-end web developer with a passion for creating
+                user-friendly and engaging web applications. I am proficient in
+                a variety of programming languages, including HTML, CSS, and
+                JavaScript. I am also experienced in using a variety of
+                development tools and frameworks.
+                <br /><br />
+
+                I am always looking for new challenges and opportunities to
+                learn and grow. I am a team player and I am always willing to
+                help others. I am also a quick learner always eager to take on
+                new tasks.
+              </span>
+            </div>
+            <div class="timeline-educ-container">
+              <div class="timeline-educ">
+                <img src="images/sample-about.jpg" alt="Image" class="img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="work">
+          <div class="work-header">
+            <h1>Work Experience</h1>
+          </div>
+
+          <div class="work-container">
+            <div class="work-description">
+              <span>
+                I am a front-end web developer with a passion for creating
+                user-friendly and engaging web applications. I am proficient in
+                a variety of programming languages, including HTML, CSS, and
+                JavaScript. I am also experienced in using a variety of
+                development tools and frameworks.
+                <br /><br />
+
+                I am always looking for new challenges and opportunities to
+                learn and grow. I am a team player and I am always willing to
+                help others. I am also a quick learner always eager to take on
+                new tasks.
+              </span>
+            </div>
+            <div class="work-timeline-container">
+              <div class="timeline-work">
+                <img src="images/sample-about.jpg" alt="Image" class="img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- for laoder -->
+
+    <script>
+      $(window).on("load", function () {
+        $("body").addClass("scroll-lock");
+        $(".loader").fadeOut(800, function () {
+          $(".overlay").fadeOut(500);
+          $("body").removeClass("scroll-lock");
+        });
+      });
+    </script>
+
+    <!-- for dropdown -->
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown-menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+
+    <!-- for typewriter effects -->
+    <script>
+      const text = document.querySelector(".sec-text");
+
+      const textLoad = () => {
+        setTimeout(() => {
+          text.textContent = "Front-End Web Developer";
+        }, 0);
+        setTimeout(() => {
+          text.textContent = "Web Application Designer";
+        }, 6000);
+        setTimeout(() => {
+          text.textContent = "Technology Connoisseur";
+        }, 12000);
+      };
+
+      textLoad();
+      setInterval(textLoad, 18000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+//about me description
+    $(".about-description").each(function () {
+      var elementPos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      var windowHeight = $(window).height();
+
+      if (
+        elementPos < topOfWindow + windowHeight &&
+        elementPos + $(this).height() > topOfWindow
+      ) {
+        var $element = $(this);
+
+        // Check if the animation class is already added
+        if (!$element.hasClass("animate__animated")) {
+          // Add a slight delay before adding the animation class
+          setTimeout(function () {
+            $element.addClass("animate__animated animate__fadeInRight");
+          }, 10);
+        }
+      } else {
+        $(this).removeClass("animate__animated animate__fadeInRight");
+      }
+    });
+    //name
+    $(".h1-header").each(function () {
+      var elementPos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      var windowHeight = $(window).height();
+
+      if (
+        elementPos < topOfWindow + windowHeight &&
+        elementPos + $(this).height() > topOfWindow
+      ) {
+        var $element = $(this);
+
+        // Check if the animation class is already added
+        if (!$element.hasClass("animate__animated")) {
+          // Add a slight delay before adding the animation class
+          setTimeout(function () {
+            $element.addClass("animate__animated animate__fadeInLeft");
+          }, 10);
+        }
+      } else {
+        $(this).removeClass("animate__animated animate__fadeInLeft");
+      }
+    });
+    //typewriter
+    $(".text").each(function () {
+      var elementPos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      var windowHeight = $(window).height();
+
+      if (
+        elementPos < topOfWindow + windowHeight &&
+        elementPos + $(this).height() > topOfWindow
+      ) {
+        var $element = $(this);
+
+        // Check if the animation class is already added
+        if (!$element.hasClass("animate__animated")) {
+          // Add a slight delay before adding the animation class
+          setTimeout(function () {
+            $element.addClass("animate__animated animate__fadeInLeft");
+          }, 100);
+        }
+      } else {
+        $(this).removeClass("animate__animated animate__fadeInLeft");
+      }
+    });
+    //description about me in Home
+    $(".description").each(function () {
+      var elementPos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      var windowHeight = $(window).height();
+
+      if (
+        elementPos < topOfWindow + windowHeight &&
+        elementPos + $(this).height() > topOfWindow
+      ) {
+        var $element = $(this);
+
+        // Check if the animation class is already added
+        if (!$element.hasClass("animate__animated")) {
+          // Add a slight delay before adding the animation class
+          setTimeout(function () {
+            $element.addClass("animate__animated animate__fadeInLeft");
+          }, 500);
+        }
+      } else {
+        $(this).removeClass("animate__animated animate__fadeInLeft");
+      }
+    });
+    //blob
+    $(".blob-container").each(function () {
+      var elementPos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      var windowHeight = $(window).height();
+
+      if (
+        elementPos < topOfWindow + windowHeight &&
+        elementPos + $(this).height() > topOfWindow
+      ) {
+        var $element = $(this);
+
+        // Check if the animation class is already added
+        if (!$element.hasClass("animate__animated")) {
+          // Add a slight delay before adding the animation class
+          setTimeout(function () {
+            $element.addClass("animate__animated animate__fadeInRight");
+          }, 0);
+        }
+      } else {
+        $(this).removeClass("animate__animated animate__fadeInRight");
+      }
+    });
+
+    //about header
+    $("#About").each(function () {
+      var elementPos = $(this).offset().top;
+      var topOfWindow = $(window).scrollTop();
+      var windowHeight = $(window).height();
+
+      if (
+        elementPos < topOfWindow + windowHeight &&
+        elementPos + $(this).height() > topOfWindow
+      ) {
+        var $element = $(this);
+
+        // Check if the animation class is already added
+        if (!$element.hasClass("animate__animated")) {
+          // Add a slight delay before adding the animation class
+          setTimeout(function () {
+            $element.addClass(
+              "animate__animated animate__fadeInUp animate__slow"
+            );
+          }, 0);
+        }
+      } else {
+        $(this).removeClass(
+          "animate__animated animate__fadeInUp animate__slow"
+        );
+      }
+    });
